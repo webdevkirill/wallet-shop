@@ -1,0 +1,131 @@
+.footer
+	background: url('../img/fform_bg.jpg') center center no-repeat / cover
+	z-index: 0
+	position: relative
+	padding: 50px 0
+	font-family: 'Roboto', sans-serif
+	&::after
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		background: rgba(52, 52, 52, 0.93)
+		z-index: -1
+	&-nav
+		&__item
+			a
+				color: #fff
+				font-weight: 300
+				font-size: 18px
+		&__ins
+			a
+				width: 240px
+				height: 60px
+				background: #C4C4C4
+				display: inline-block
+				display: flex
+				flex-direction: row
+				align-items: center
+				padding-left: 20px
+				&:hover
+					span
+						color: #292929
+				&::after
+					display: none
+				img
+					width: 35px
+					height: 35px
+					margin-right: 10px
+				span
+					font-family: Roboto Slab
+					font-weight: 400
+					font-size: 16px
+					color: #000
+					transition: 0.2s
+	&-copy
+		color: #fff
+		margin: 0 auto
+		text-align: center
+		font-size: 12px
+		&__creator
+			margin-bottom: 5px
+			a
+				color: #fff
+				font-weight: 300
+
+@media (max-width: 1200px)
+	.footer
+		&-logo
+			width: 130px
+			height: 130px
+			.cercle
+				width: 116px
+				height: 116px
+				img
+					left: calc(50% - 30px)
+					top: calc(50% - 37px)
+					width: 60px
+					height: 74px
+
+@media (max-width: 992px)
+	.footer
+		&-logo
+			width: 110px
+			height: 110px
+			.cercle
+				width: 96px
+				height: 96px
+				img
+					left: calc(50% - 25px)
+					top: calc(50% - 32px)
+					width: 50px
+					height: 64px
+
+@media (max-width: 768px)
+	.footer
+		&-logo
+			width: 80px
+			height: 80px
+			.cercle
+				width: 66px
+				height: 66px
+				img
+					left: calc(50% - 18px)
+					top: calc(50% - 25px)
+					width: 36px
+					height: 50px
+		&-nav
+			&__item
+				a
+					font-size: 16px
+			&__ins
+				a
+					width: 180px
+					height: 60px
+					padding-left: 10px
+					span
+						font-size: 14px
+
+
+@media (max-width: 576px)
+	.footer
+		&-logo
+			width: 80px
+			height: 80px
+			.cercle
+				width: 66px
+				height: 66px
+				img
+					left: calc(50% - 18px)
+					top: calc(50% - 25px)
+					width: 36px
+					height: 50px
+		&-nav
+			&__item
+				margin-bottom: 15px
+			&__ins
+				margin-bottom: 10px
+
+

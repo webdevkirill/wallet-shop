@@ -1,0 +1,98 @@
+.handmade
+	padding: 120px 0
+	font-family: 'Roboto', sans-serif
+	color: #292929
+	&-img
+		position: relative
+		img
+			width: 659px
+			height: 374px
+		&::after
+			content: ''
+			position: absolute
+			width: 616px
+			height: 334px
+			left: 21px
+			top: 21px
+			border: 3px dashed #fff
+	&-text
+		padding-left: 30px
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		&__title
+			font-weight: 700
+			font-size: 34px
+			line-height: 113.3%
+			margin-bottom: 20px
+		&__descr
+			font-weight: 400
+			font-size: 16px
+			line-height: 143.3%
+
+@media (max-width: 1200px)
+	.handmade
+		padding: 80px 0
+		&-img
+			img
+				width: 509px
+				height: 274px
+			&::after
+				width: 466px
+				height: 234px
+
+@media (max-width: 992px)
+	.handmade
+		padding: 60px 0
+		&-img
+			img
+				width: 409px
+				height: 224px
+			&::after
+				width: 366px
+				height: 184px
+
+@media (max-width: 768px)
+	.handmade
+		padding: 40px 0
+		text-align: center
+		&-text
+			&__title
+				margin-bottom: 5px
+			margin-bottom: 30px
+			padding-left: 0
+			br
+				display: none
+		&-img
+			img
+				width: 100%
+				height: 300px
+			&::after
+				width: calc(100% - 43px)
+				height: calc(300px - 40px)
+
+@media (max-width: 576px)
+	.handmade
+		&-text
+			&__title
+				font-size: 26px
+		&-img
+			img
+				width: 100%
+				height: 250px
+			&::after
+				width: calc(100% - 43px)
+				height: calc(250px - 40px)
+
+
+
+
+
+
+
+
+
+
+
+

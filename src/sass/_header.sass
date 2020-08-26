@@ -1,0 +1,211 @@
+.header
+	color: #fff
+	padding: 30px 0
+	background: url("../img/header-bg.png") center center no-repeat / cover 
+	position: relative
+	height: 100vh
+	z-index: 0
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	&::after
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: rgba(75, 49, 49, 0.5)
+		z-index: -1
+	&-logo
+		width: 160px
+		height: 160px
+		border: 2px solid #fff
+		border-radius: 50%
+		position: relative
+		.cercle
+			width: 146px
+			height: 146px
+			border: 2px dashed #fff
+			border-radius: 50%
+			position: absolute
+			left: 5px
+			top: 5px
+			img
+				position: absolute
+				left: calc(50% - 40px)
+				top: calc(50% - 47px)
+				width: 80px
+				height: 94px
+				fill: #fff
+	&-nav
+		// margin-bottom: 2rem
+		&__item
+			font-family: 'Roboto', sans-serif
+			font-weight: 300
+			color: #fff
+			font-size: 18px
+			a
+				font-family: 'Roboto', sans-serif
+				font-weight: 300
+				color: #fff
+				font-size: 18px
+				position: relative
+				&::after
+					content: ''
+					width: 0
+					height: 1px
+					position: absolute
+					bottom: -2px
+					left: 0
+					background-color: #fff
+					transition: 0.2s
+				&:hover::after
+					width: 100%
+			&-loc
+				display: flex
+				align-items: center
+				img
+					height: 20px
+					margin-right: 15px
+	
+	&-descr
+		margin-top: -60px
+		&__subtitle
+			font-family: 'Roboto Slab', serif
+			font-size: 32px
+			font-weight: 300
+			margin-bottom: 20px
+		&__title
+			font-family: "Roboto Slab", serif
+			font-size: 42px
+			font-weight: 700
+			margin-bottom: 45px
+	
+	&-arrow
+		margin: 0 auto
+		display: flex
+		flex-direction: column
+		align-items: center
+		&__text
+			margin-bottom: 10px
+			font-family: 'Roboto', sans-serif
+			font-size: 16px
+			font-weight: 400
+			cursor: pointer
+		img
+			cursor: pointer
+
+
+
+@media (max-width: 1200px)
+	.header
+		&-logo
+			width: 130px
+			height: 130px
+			.cercle
+				width: 116px
+				height: 116px
+				img
+					left: calc(50% - 30px)
+					top: calc(50% - 37px)
+					width: 60px
+					height: 74px
+		&-nav
+			&__item
+				font-size: 16px
+				a
+					font-size: 16px
+				&-loc
+					img
+						height: 20px
+						margin-right: 7px
+		&-descr
+			margin-top: -60px
+			&__subtitle
+				font-family: 'Roboto Slab', serif
+				font-size: 24px
+				margin-bottom: 20px
+			&__title
+				font-family: "Roboto Slab", serif
+				font-size: 32px
+				margin-bottom: 45px
+
+@media (max-width: 768px)
+	.header
+		&-logo
+			width: 100px
+			height: 100px
+			.cercle
+				width: 86px
+				height: 86px
+				img
+					left: calc(50% - 30px)
+					top: calc(50% - 30px)
+					width: 60px
+					height: 60px
+		&-nav
+			&__item
+				font-size: 16px
+				a
+					font-size: 16px
+				&-loc
+					padding-left: 30px
+					img
+						margin-right: 7px
+		&-descr
+			margin-top: 0
+			&__subtitle
+				text-align: center
+				font-size: 28px
+				margin-bottom: 20px
+			&__title
+				text-align: center
+				font-size: 36px
+				margin-bottom: 45px
+			&__btn
+				text-align: center
+
+@media (max-width: 768px)
+	.header
+		&-logo
+			width: 100px
+			height: 100px
+			margin-bottom: 15px
+			.cercle
+				width: 86px
+				height: 86px
+				img
+					left: calc(50% - 30px)
+					top: calc(50% - 30px)
+					width: 60px
+					height: 60px
+		&-nav
+			&__item
+				font-size: 16px
+				&:nth-child(3)
+					text-align: right
+
+				a
+					font-size: 16px
+				&-loc
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					justify-content: flex-end
+					img
+						margin-right: 7px
+		&-descr
+			margin-top: 0
+			&__subtitle
+				font-size: 20px
+				margin-bottom: 15px
+			&__title
+				font-size: 26px
+				margin-bottom: 30px
+			&__btn
+				text-align: center
+
+

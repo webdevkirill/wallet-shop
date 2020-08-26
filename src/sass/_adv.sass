@@ -1,0 +1,62 @@
+.adv
+	padding-top: 120px
+	display: flex
+	align-items: center
+	color: #292929
+	&-item
+		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25)
+		border-radius: 3px
+		display: flex
+		flex-direction: row
+		padding: 32px 0 32px 30px
+		display: flex
+		align-items: center
+		min-height: 140px
+		&__text
+			font-family: 'Roboto Slab', serif
+			font-weight: 400
+			font-size: 16px
+			span
+				display: block
+		img
+			margin-right: 20px
+
+@media (max-width: 1200px)
+	.adv
+		padding-top: 80px
+		&-item
+			margin-bottom: 20px	
+			&__text
+				font-size: 14px
+				
+@media (max-width: 992px)
+	.adv
+		padding-top: 60px
+
+@media (max-width: 768px)
+	.adv
+		padding-top: 40px
+		&-item
+			padding: 0 60px
+			display: flex
+			align-items: center
+			justify-content: center
+			min-height: 100px
+			&__text
+				font-weight: 400
+				font-size: 16px
+				span
+					display: inline
+@media (max-width: 576px)
+	.adv
+		padding-top: 40px
+		&-item
+			padding: 0 20px
+			display: flex
+			align-items: center
+			justify-content: center
+			min-height: 100px
+			&__text
+				font-weight: 400
+				font-size: 14px
+

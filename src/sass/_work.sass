@@ -1,0 +1,87 @@
+.work
+	background: url('../img/work_bg.jpg') center center no-repeat / cover
+	position: relative
+	z-index: 0
+	color: #fff
+	padding: 100px 0 34px 0
+	font-family: 'Roboto Slab', serif
+	&::after
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: rgba(75, 49, 49, 0.75)
+		z-index: -1
+	&-title
+		font-weight: 700
+		font-size: 34px
+		margin-bottom: 50px
+		display: block
+	&-item
+		display: flex
+		flex-direction: row
+		align-items: center
+		margin-bottom: 66px
+		&__number
+			font-size: 48px
+			font-weight: 400
+			margin-right: 30px
+		&__text
+			font-size: 16px
+			font-weight: 400
+			span
+				display: block
+
+@media (max-width: 1200px)
+	.work
+		&-item
+			&__text
+				font-size: 15px
+				span
+					display: inline
+
+@media (max-width: 992px)
+	.work
+		padding: 60px 0 24px 0
+		&-item
+			margin-bottom: 36px
+			&__number
+				font-size: 36px
+				font-weight: 400
+				margin-right: 30px
+			&__text
+				font-size: 14px
+
+
+@media (max-width: 768px)
+	.work
+		padding: 40px 0 4px 0
+		&-item
+			margin-bottom: 36px
+			&__number
+				font-size: 30px
+				font-weight: 400
+				margin-right: 10px
+			&__text
+				font-size: 14px
+
+@media (max-width: 576px)
+	.work
+		&-title
+			font-size: 28px
+			text-align: center
+		&-item
+			margin-bottom: 20px
+			&__number
+				font-size: 26px
+				margin-right: 10px
+			&__text
+				font-size: 12px
+
+
+
+
+
+

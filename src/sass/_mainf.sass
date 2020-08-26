@@ -1,0 +1,100 @@
+.mainf
+	background: url('../img/mainf_bg.jpg') center center no-repeat / cover
+	z-index: 0
+	position: relative
+	color: #292929
+	font-family: 'Roboto Slab', serif
+	padding: 175px 0 120px 0
+	&::after
+		content: ''
+		z-index: -1
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background: rgba(85, 58, 54, 0.75)
+	&-wrapper
+		background: #E2E2E2
+		border-radius: 3px
+		padding: 70px 80px
+	&-title
+		font-weight: 700
+		font-size: 21px
+		margin-bottom: 10px
+	&-subtitle
+		font-weight: 400
+		font-size: 16px
+		margin-bottom: 20px
+	&-form
+		&__input
+			width: 100%
+			height: 50px
+			margin-bottom: 10px
+			border: 1px solid #C4C4C4
+			border-radius: 3px
+			padding-left: 15px
+			color: #292929
+			font-family: "Roboto Slab"
+			font-size: 16px
+			font-weight: 400
+			transition: 0.2s
+			&::placeholder
+				color: #C4C4C4
+			&:focus
+				box-shadow: 0px 0px 10px #C4C4C4
+		&__check
+				display: none
+				cursor: pointer
+		&__check + label:before 
+		    content: "\2713"
+		    color: transparent
+		    display: inline-block
+		    border: 1px solid #292929
+		    font-size: 20px   
+		    line-height: 18px
+		    margin: -5px 5px 0 0
+		    height: 20px
+		    width: 20px
+		    text-align: center
+		    vertical-align: middle
+		    transition: color ease .2s
+		&__check:checked + label:before
+		    color: #292929
+		label
+			font-weight: 400
+			font-size: 12px
+			cursor: pointer
+			a
+				color: #292929
+				&::after
+					width: 100%
+					background-color: #292929
+				&:hover::after
+					width: 0
+		&__btn
+			width: 100%
+			margin-top: 20px
+
+
+@media (max-width: 1200px)
+	.mainf
+		padding: 80px 0
+
+@media (max-width: 992px)
+	.mainf
+		padding: 60px 0
+
+@media (max-width: 576px)
+	.mainf
+		padding: 40px 0
+		&-wrapper
+			padding: 30px 20px
+		&-title
+			font-size: 20px
+			text-align: center
+		&-subtitle
+			text-align: center
+
+
+
